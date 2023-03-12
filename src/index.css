@@ -13,8 +13,12 @@ body {
 .card{
   color :white;
   background-color: black;
-  border-width: 5px;
-  border-color: rgb(204, 204, 17);
+}
+.card-title{
+  color: black;
+}
+.skill-icon{
+  color: black;
 }
 
 code {
