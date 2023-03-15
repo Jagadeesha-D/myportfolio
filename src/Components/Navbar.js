@@ -1,29 +1,26 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <Link className="navbar-brand" to="/">Jagadeesha D</Link>
+        <NavLink className="navbar-brand" to="/">Jagadeesha D</NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <NavLink className="nav-link" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/projects">Projects</Link>
+              <NavLink className="nav-link" to="/projects">Projects</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/skills">Skills</Link>
+              <NavLink className="nav-link" to="/skills">Skills</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact Us</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">About Me</Link>
+              <NavLink className="nav-link" to="/about">About Me</NavLink>
             </li>
           </ul>
         </div>

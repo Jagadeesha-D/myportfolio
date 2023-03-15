@@ -4,7 +4,6 @@ import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
 import Skills from "./Pages/Skills";
-import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import EcommerceProject from "./Pages/Projects/Ecommerce";
 import "./App.css";
@@ -40,7 +39,6 @@ function App() {
             element={<BlogProject />}
           />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
         </Routes>
       
