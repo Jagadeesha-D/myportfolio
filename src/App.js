@@ -10,6 +10,7 @@ import "./App.css";
 import SocialMediaPlatform from "./Pages/Projects/Socialmediaplatform";
 import FullStackProjectView from "./Pages/FullStackProjectView";
 import BlogProject from "./Pages/Projects/BlogProject";
+import Icons from "./Pages/SkillsRotate";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         </Routes>
       
       <Footer />
+      
     </Router>
   );
 }

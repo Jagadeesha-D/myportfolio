@@ -2,38 +2,41 @@ import { FaReact, FaNodeJs, FaDatabase, FaCloud, FaExchangeAlt, FaCode } from 'r
 import { SiGraphql } from 'react-icons/si';
 
 
-function SkillCard({ title, icon }) {
-  return (
+function SkillCard({ title, icon,myimage }) {
+  return (<>
     <div className="col-lg-4 mb-3">
       <div className="card skill-card">
         <div className="card-body">
           <div className="d-flex align-items-center">
-            <div className="skill-icon mr-2">{icon}</div>
+            <div className="skill-icon mr-2">{icon}
+            <img className='skill-img' src={myimage}></img>
+            </div>
             <h5 className="card-title">{title}</h5>
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 }
 
 function Skills() {
   const mernStackSkills = [
-    { title: 'ReactJS', icon: <FaReact /> },
+    { title: 'ReactJS', icon: <FaReact />,skillImage:'https://mpng.subpng.com/20190401/zsf/kisspng-mongodb-document-oriented-database-nosql-openshift-web-app-development-servcie-in-dehradun-5ca1b8cb8a0f32.3708278115541024755655.jpg' },
     { title: 'Node.js', icon: <FaNodeJs /> },
     { title: 'Express.js', icon: <FaNodeJs /> },
-    { title: 'MongoDB',  },
-    { title: 'REST APIs' },
+    { title: 'MongoDB',skillImage:'https://mpng.subpng.com/20190401/zsf/kisspng-mongodb-document-oriented-database-nosql-openshift-web-app-development-servcie-in-dehradun-5ca1b8cb8a0f32.3708278115541024755655.jpg'},
+    { title: 'REST APIs',skillImage:'https://www.connectpos.com/wp-content/uploads/Capture-23.jpg' },
     { title: 'GraphQL', icon: <SiGraphql /> }
   ];
 
   const mulesoftSkills = [
-    { title: 'Anypoint Platform',  },
-    { title: 'API Designer', icon: <FaCode /> },
-    { title: 'API Manager', icon: <FaCloud /> },
-    { title: 'MuleSoft Runtime', icon: <FaExchangeAlt /> },
-    { title: 'MUnit', icon: <FaCode /> },
-    { title: 'DataWeave', icon: <FaDatabase /> }
+    { title: 'Anypoint Platform',skillImage:'https://images.saasworthy.com/mulesoftanypointconnectors_8518_logo_1593769664_5tgkf.jpg'  },
+    { title: 'API Designer', skillImage:'https://images.saasworthy.com/mulesoftanypointconnectors_8518_logo_1593769664_5tgkf.jpg' },
+    { title: 'API Manager', skillImage:'https://images.saasworthy.com/mulesoftanypointconnectors_8518_logo_1593769664_5tgkf.jpg' },
+    { title: 'MuleSoft Runtime', skillImage:'https://images.saasworthy.com/mulesoftanypointconnectors_8518_logo_1593769664_5tgkf.jpg' },
+    { title: 'MUnit', skillImage:'https://images.saasworthy.com/mulesoftanypointconnectors_8518_logo_1593769664_5tgkf.jpg' },
+    { title: 'DataWeave', skillImage:'https://images.saasworthy.com/mulesoftanypointconnectors_8518_logo_1593769664_5tgkf.jpg' }
   ];
 
   return (
@@ -42,7 +45,7 @@ function Skills() {
       <hr />
       <div className="row">
         {mernStackSkills.map(skill => (
-          <SkillCard key={skill.title} title={skill.title} icon={skill.icon} />
+          <SkillCard key={skill.title} title={skill.title} icon={skill.icon} myimage={skill.skillImage}/>
         ))}
       </div>
 
@@ -50,7 +53,7 @@ function Skills() {
       <hr />
       <div className="row">
         {mulesoftSkills.map(skill => (
-          <SkillCard key={skill.title} title={skill.title} icon={skill.icon} />
+          <SkillCard key={skill.title} title={skill.title} icon={skill.icon} myimage={skill.skillImage} />
         ))}
       </div>
     </div>

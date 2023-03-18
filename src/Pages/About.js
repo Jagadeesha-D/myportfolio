@@ -6,6 +6,7 @@ const About = () => {
     <div className="about-container">
       <div style={{ float: "right" }}>
         <img
+          className="about-photo"
           src={myPhoto}
           alt="Your Name"
           style={{ width: "200px", height: "200px", borderRadius: "50%" }}

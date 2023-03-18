@@ -29,8 +29,8 @@ function Footer() {
             <h5 className="text-uppercase">Social Media</h5>
 
             <ul className="list-unstyled mb-0">
-              <li><a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a></li>
-              <li><a href="https://www.instagram.com/your-instagram-profile" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/jagadeesha-d" target="_blank" rel="noopener noreferrer"><FaLinkedin /> </a></li>
+              <li><a href="https://www.instagram.com/jaggu__d_k_s" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></li>
             </ul>
           </div>
 

@@ -7,8 +7,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  
+  background: url("D:\workplace\portfolio\portfolio\src\Pages\Group 1.svg");
+}
+nav{
+  background-color: transparent;
 }
 .card{
   color :white;

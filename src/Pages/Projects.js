@@ -5,7 +5,7 @@ function FullStackProject({title, description, url, imageUrl }) {
   //const { projectName } = useParams();
   return (
     <div className="col-lg-6">
-      <div className="card mb-4">
+      <div className="card card-p mb-4">
         <img className="card-img-top" src={imageUrl} alt="project of website" />
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
