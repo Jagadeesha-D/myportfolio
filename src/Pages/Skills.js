@@ -1,4 +1,4 @@
-import { FaReact, FaNodeJs, FaDatabase, FaCloud, FaExchangeAlt, FaCode } from 'react-icons/fa';
+import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiGraphql } from 'react-icons/si';
 
 
@@ -9,7 +9,7 @@ function SkillCard({ title, icon,myimage }) {
         <div className="card-body">
           <div className="d-flex align-items-center">
             <div className="skill-icon mr-2">{icon}
-            <img className='skill-img' src={myimage}></img>
+            <img className='skill-img' alt='skillset'src={myimage}></img>
             </div>
             <h5 className="card-title">{title}</h5>
           </div>
