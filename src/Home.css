@@ -49,7 +49,7 @@
   
   @media screen and (max-width: 480px) {
     .home {
-      background-image: url("D:\workplace\portfolio\portfolio\src\Pages\iPhone 14 Pro Max.svg");;
+      background-image: url("D:\workplace\portfolio\portfolio\src\images\iPhone_14_Pro Max.svg");;
         display: flex;
         flex-direction: column;
         align-items: center;
