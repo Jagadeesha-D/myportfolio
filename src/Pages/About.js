@@ -1,5 +1,4 @@
 import React from "react";
-import myPhoto from "../images/my-photo.png";
 import "./About.css";
 const About = () => {
   return (
@@ -7,7 +6,7 @@ const About = () => {
       <div style={{ float: "right" }}>
         <img
           className="about-photo"
-          src={myPhoto}
+          src="https://media.discordapp.net/attachments/1086135594616369165/1086142039038640208/RaviKumar_create_a_logo_with_letter_J_and_D_with_name_jagadeesh_c47084d2-ec7f-4c42-a0b1-cd855e358134.png?width=594&height=594"
           alt="Your Name"
           style={{ width: "200px", height: "200px", borderRadius: "50%" }}
         />

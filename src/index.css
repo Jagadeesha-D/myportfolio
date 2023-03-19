@@ -7,7 +7,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("D:\workplace\portfolio\portfolio\src\images\Group_1.svg");
+  background: url("https://media.discordapp.net/attachments/1086135594616369165/1086936596768636958/Group_1.png?width=1059&height=592");
+  background-size:contain;
 }
 nav{
   background-color: transparent;
