@@ -1,5 +1,5 @@
 body {
-  color :white;
+  color :#FBFEF9;
   background-color: black;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,14 +8,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url("https://media.discordapp.net/attachments/1086135594616369165/1086936596768636958/Group_1.png?width=1059&height=592");
-  background-size:contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+@media (max-width: 768px) {
+  body {
+    background-image: url('https://media.discordapp.net/attachments/1086135594616369165/1086950594125774959/iPhone_14_Pro_Max_-_1.png?width=274&height=594');
+    background-size: cover;
+  }
 }
 nav{
   background-color: transparent;
 }
 .card{
   color :white;
-  background-color: black;
+  background-color: #A74441
 }
 .card-title{
   color: black;
@@ -35,5 +43,40 @@ code {
   width: 100%;
   height: 60px;
   background-color: #f5f5f5;
+}
+.bg-dark-2{
+  background-color: #f5f5f5;
+  color:#A74441 ;
+}
+.btn{
+  background-color:#41A4A7 ;
+  border: #2e0014;
+
+}
+.submit-btn{
+  background-color:#A74441 ;
+  border: #A74441;
+
+}
+.submit-btn:hover  {
+  background-color:#D24D49;
+}
+.submit-btn:active{
+  background-color: #d6d749;
+}
+.footer-icon-links{
+  color: #A74441;
+  display: block;
+  padding-right: 20px;
+
+
+}
+.icon-list{
+  align-items:flex-start;
+
+}
+.footer-icon-links:hover{
+color:#D24D49;
+
 }
 

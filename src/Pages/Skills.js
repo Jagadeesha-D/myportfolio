@@ -1,14 +1,14 @@
-import { FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiGraphql } from 'react-icons/si';
 
 
-function SkillCard({ title, icon,myimage }) {
+
+
+function SkillCard({ title,myimage }) {
   return (<>
     <div className="col-lg-4 mb-3">
       <div className="card skill-card">
         <div className="card-body">
           <div className="d-flex align-items-center">
-            <div className="skill-icon mr-2">{icon}
+            <div className="skill-icon mr-2">
             <img className='skill-img' alt='skillset'src={myimage}></img>
             </div>
             <h5 className="card-title">{title}</h5>
@@ -22,12 +22,13 @@ function SkillCard({ title, icon,myimage }) {
 
 function Skills() {
   const mernStackSkills = [
-    { title: 'ReactJS', icon: <FaReact />,skillImage:'https://mpng.subpng.com/20190401/zsf/kisspng-mongodb-document-oriented-database-nosql-openshift-web-app-development-servcie-in-dehradun-5ca1b8cb8a0f32.3708278115541024755655.jpg' },
-    { title: 'Node.js', icon: <FaNodeJs /> },
-    { title: 'Express.js', icon: <FaNodeJs /> },
+    { title: 'ReactJS', skillImage :'https://www.pngitem.com/pimgs/m/664-6644509_icon-react-js-logo-hd-png-download.png'},
+    {title:'Javascript',skillImage:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"},
+    { title: 'Node.js', skillImage:'https://logos-download.com/wp-content/uploads/2016/09/Node_logo_NodeJS.png'},
+    { title: 'Express.js',skillImage:'https://template-images--amasad.repl.co/express.png',},
     { title: 'MongoDB',skillImage:'https://mpng.subpng.com/20190401/zsf/kisspng-mongodb-document-oriented-database-nosql-openshift-web-app-development-servcie-in-dehradun-5ca1b8cb8a0f32.3708278115541024755655.jpg'},
     { title: 'REST APIs',skillImage:'https://www.connectpos.com/wp-content/uploads/Capture-23.jpg' },
-    { title: 'GraphQL', icon: <SiGraphql /> }
+
   ];
 
   const mulesoftSkills = [
@@ -45,7 +46,7 @@ function Skills() {
       <hr />
       <div className="row">
         {mernStackSkills.map(skill => (
-          <SkillCard key={skill.title} title={skill.title} icon={skill.icon} myimage={skill.skillImage}/>
+          <SkillCard key={skill.title} title={skill.title} myimage={skill.skillImage}/>
         ))}
       </div>
 
@@ -53,7 +54,7 @@ function Skills() {
       <hr />
       <div className="row">
         {mulesoftSkills.map(skill => (
-          <SkillCard key={skill.title} title={skill.title} icon={skill.icon} myimage={skill.skillImage} />
+          <SkillCard key={skill.title} title={skill.title}  myimage={skill.skillImage} />
         ))}
       </div>
     </div>
